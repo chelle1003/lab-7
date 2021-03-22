@@ -1,0 +1,19 @@
+print("***** Data barang belanjaan *****")
+nama=str(input("Masukkan nama anda:"))
+data=str(input("Masukkan data belanjaan awal:"))
+a=data.split(" ")
+print("Daftar Belanjaan",nama.capitalize(),"=",data)
+tanya=str(input("Apakah masih ada barang yang ingin dibeli lagi?:"))
+if tanya=="ya":
+    y=str(input("Tambahkan nama barang:"))
+    b=y.split(" ")
+    for p in b:
+        a.append(p)
+    print("Setelah ditambahkan menjadi=",a)
+    a.sort()
+    print("Setelah diurutkan menjadi=",a)
+    print("Barang belanjaanmu sudah lengkap, ayo kita bayar!!!")
+else:
+    a.sort()
+    print("Setelah diurutkan menjadi=",a)
+    print("Barang belanjaanmu sudah lengkap, ayo kita bayar!!!")  
